@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
-    <link rel="stylesheet" href="assets/css/form.css">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="/assets/css/styles.css">
+
 </head>
 <body>
     <header>
@@ -14,17 +14,21 @@
     </header>
     <main>
         <img src="/assets/welcome.png" alt="welcome">
-        <form action="">
-            <label for="username"></label>
-            <input type="text">
-            <label for="title"></label>
-            <input type="text">
-            <label for="post"></label>
-            <textarea type="message">
+         <form id="blogForm">
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="title">Blog Title:</label>
+            <input type="text" id="title" name="title" required>
+
+            <label for="content">Blog Content:</label>
+            <textarea id="content" name="content" required></textarea>
+
+            <button type="submit">Submit</button>
         </form>
     </main>
-    <footer>
-        <p><a href="https://drewholliday.github.io/portfolio-challenge/">"Developer Portfolio"</a></p>
+    <footer> 
+        <p><a class="portfolioLink" href="https://drewholliday.github.io/portfolio-challenge/">Developer Portfolio</a></p>
     </footer>
     
 </body>
