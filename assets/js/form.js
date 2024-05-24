@@ -12,7 +12,7 @@ document.getElementById("blogForm").addEventListener('submit',function(event) {
         content
     };
 
-
+// Define array as the array "posts" in local storage. If the arry does not exist, initialize it
     let posts = JSON.parse(localStorage.getItem(posts)) || [];
     posts.push(post);
     localStorage.setItem('posts', JSON.stringify(post));
